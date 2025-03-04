@@ -163,3 +163,26 @@ li{
     margin-right: 10px;
     
 }
+
+.content-bar{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    
+}
+
+.content-bar li{
+    display: inline;
+    
+}
+
+.content-bar ul{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.card-recently{
+    
+}
