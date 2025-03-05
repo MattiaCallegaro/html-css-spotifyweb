@@ -30,6 +30,9 @@ header{
     height: 100%;
     width: 20%;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .content{
@@ -78,7 +81,7 @@ footer{
 
 /* btn */
 
-.btn{
+.btn-upgrade{
     border: 3px solid white;
     display: inline-block;
     padding: 10px 35px;
@@ -86,15 +89,14 @@ footer{
     color: white;
     margin-right: 10px;
     margin-bottom: 15px;
+    
 }
 
 /* utility */
 
 ul{
     list-style: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5%;
+    
 }
 
 .icone{
@@ -109,10 +111,15 @@ li{
     gap: 10px;   
 }
 
+.sidebar-content{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
 .Playlist{
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 8%;
+    
 }
 
 .playlist-title{
@@ -127,18 +134,14 @@ li{
     margin-bottom: 15px;
 }
 
-.nome-playlist{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.nome-playlist li{
+    margin-top: 5px;
 }
 
 .install{
-    flex-direction: column;
-    justify-content: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 200px;
+   margin-top: auto;
+   
+    
 }
 
 .col-line{
@@ -183,6 +186,18 @@ li{
     
 }
 
-.card-recently{
+.recently-played{
+    display: flex;
     
+    
+}
+
+.card{
+    width: calc(100% / 6);
+    height: calc(100vw / 6);    
+}
+
+.card img{
+    width: 50%;
+    height: 50%;
 }
