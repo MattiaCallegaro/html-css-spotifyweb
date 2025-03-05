@@ -1,21 +1,21 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     color: white;
 }
 
-main{
+main {
     height: calc(100vh - 100px);
     background-color: grey;
     display: flex;
 }
 
-header{
+header {
     position: sticky;
     height: 10%;
     background-color: black;
@@ -23,31 +23,32 @@ header{
     justify-content: flex-end;
     align-items: center;
     display: flex;
-    
+
 }
 
-.sidebar{
+.sidebar {
     height: 100%;
     width: 20%;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    font-size: 15px;
 }
 
-.content{
+.content {
     width: calc(100% - 150px);
     overflow-y: auto;
 }
 
-footer{
+footer {
     height: 100px;
     background-color: rgb(45, 45, 37);
 }
 
 /* contenitori */
 
-.create-playlist{
+.create-playlist {
     height: 30px;
     width: 30px;
     background-color: #A3A3A3;
@@ -55,7 +56,7 @@ footer{
     display: inline-block;
 }
 
-.plus{
+.plus {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,13 +67,13 @@ footer{
 
 /* img */
 
-.logo{
-   width: 90%;
-  padding: 20px 15px;
+.logo {
+    width: 90%;
+    padding: 20px 15px;
 
 }
 
-.home{
+.home {
     width: 20%;
 }
 
@@ -81,7 +82,7 @@ footer{
 
 /* btn */
 
-.btn-upgrade{
+.btn-upgrade {
     border: 3px solid white;
     display: inline-block;
     padding: 10px 35px;
@@ -89,127 +90,149 @@ footer{
     color: white;
     margin-right: 10px;
     margin-bottom: 15px;
-    
+
 }
 
 /* utility */
 
-ul{
+ul {
     list-style: none;
-    
+
 }
 
-.icone{
+.icone {
     width: 15%;
-    
+
 }
 
-li{
+li {
     padding: 5px;
     display: flex;
     align-items: center;
-    gap: 10px;   
+    gap: 10px;
 }
 
-.sidebar-content{
+.sidebar-content {
     margin-top: 50px;
     margin-left: 15px;
 }
 
-.Playlist{
+.Playlist {
     margin-top: 10px;
     margin-bottom: 10px;
-    
+
 }
 
-.playlist-title{
+.playlist-title {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.cont-piu{
+.cont-piu {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
 }
 
-.nome-playlist li{
+.nome-playlist li {
     margin-top: 5px;
 }
 
-.install{
-   margin-top: auto;
-   
-    
+.install {
+    margin-top: auto;
+
+
 }
 
-.col-line{
+.col-line {
     width: 80%;
     border: 1px solid rgb(47, 44, 44);
     margin-left: 20px;
 }
 
-.install-top{
+.install-top {
     padding: 20px;
     gap: 5px;
     font-size: 15px;
 }
 
-.utente{
+.utente {
     padding: 20px;
     gap: 5px;
     font-size: 20px;
 }
 
-.install i{
+.install i {
     margin-right: 10px;
-    
+
 }
 
-.content-bar{
-    width:100%;
+.content-bar {
+    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 10px;
-    
+
 }
 
-.content-bar li{
+.title-section {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.content-bar li {
     display: inline;
-    
+
 }
 
-.content-bar ul{
+.content-bar ul {
     display: flex;
     gap: 10px;
-    
+
 }
 
-.recently-played{
+.recently-played {
     display: flex;
     gap: 10px;
     margin-left: 15px;
     margin-right: 15px;
-    
-    
 }
 
-.card{
-    width: 100%;
+.Creato-per-JohnDoe {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-    margin-top: 25px;    
+    gap: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.card img{
+.card1 {
+    width: calc(100% / 6 -20px);
+    margin-top: 25px;
+}
+
+.card2 {
+    width: calc(100% / 6);
+    margin-top: 25px;
+}
+
+.card2 img {
     width: 100%;
-    
+
 }
 
-.text-card{
-    text-align: center;
-   margin-top: 20px;
+.card1-img {
+
+    width: 100%;
 }
+
+.text-card {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 9px;
+}
+
+.title-section{
+    margin-top: 30px;
+}
+
