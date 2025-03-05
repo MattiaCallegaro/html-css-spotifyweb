@@ -42,10 +42,7 @@ header {
     background-color: #141922;
 }
 
-footer {
-    height: 100px;
-    background-color:#282828;
-}
+
 
 /* contenitori */
 
@@ -174,6 +171,7 @@ li {
     display: flex;
     justify-content: center;
     font-size: 10px;
+    margin-top: 10px;
 
 }
 
@@ -247,3 +245,90 @@ li {
     margin-top: 25px;
 }
 
+
+
+/* footer */
+
+
+footer {
+    height: 100px;
+    background-color:#282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+footer i{
+    padding: 8px;
+}
+
+.footer-sx img{
+    width: 20%;
+    padding: 10px;
+    
+}
+
+.footer-sx{
+   display: flex;
+   flex-direction:row; 
+   width: calc(100% / 3);   
+}
+
+.footer-mid{
+    display: flex;
+    flex-direction:row; 
+    width: calc(100% / 3); 
+    justify-content: center; 
+    
+ }
+
+ .barre-volume{
+    display: flex;
+    width: 100%;
+ }
+
+ .volume-mid{
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+    
+    
+    
+ }
+
+ .time-volume{
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+ .barra-grigia{
+    height: 4px;
+    background-color: #e2d7d7;
+    width: 100%;
+    
+ }
+
+ .barra-bianca{
+    height: 4px;
+    background-color: #393636;
+    width: 30%;
+ }
+
+ .footer-dx{
+    display: flex;
+    flex-direction:row;
+    width: calc(100% / 3); 
+    justify-content: center;    
+ }
+
+.testo-sx{
+    align-content: center;
+    font-size: 12px; 
+}
+
+.icone-sx{
+    
+  align-content: center;
+  margin-left: 15px;
+    
+}
