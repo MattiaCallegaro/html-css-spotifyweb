@@ -178,7 +178,7 @@ li {
 }
 
 .title-section {
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 15px;
 }
 
@@ -195,24 +195,34 @@ li {
 
 .recently-played {
     display: flex;
-    
-    width: 100%;
+
 }
 
 .Creato-per-JohnDoe {
-    display: flex; 
+    display: flex;
 }
 
 .card1 {
-    width: calc(100% / 6 );
+    width: calc(100% / 6);
     margin-top: 25px;
     padding: 10px;
 }
 
 .card2 {
-    width: calc(100% / 6 );
+    width: calc(100% / 6);
     margin-top: 25px;
     padding: 10px;
+}
+
+.card3 {
+    width: calc(100% / 6);
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.card3 img {
+    border-radius: 50%;
+    width: 100%;
 }
 
 .card2 img {
@@ -235,21 +245,7 @@ li {
     margin-top: 30px;
 }
 
-.card3 img {
-    border-radius: 50%;
-    width: 100%;
-}
-
-.card3 {
-    width: calc(100% / 6 );
-    margin-top: 25px;
-    padding: 10px;
-}
-
-
-
 /* footer */
-
 
 footer {
     height: 100px;
@@ -409,13 +405,25 @@ footer i {
     .recently-played {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+
     }
 
     .card1 {
 
         margin-top: 10px;
-        width: calc(100% / 5)
+        width: calc(100% / 4)
+    }
+
+    .card2 {
+
+        margin-top: 10px;
+        width: calc(100% / 4)
+    }
+
+    .card3 {
+
+        margin-top: 10px;
+        width: calc(100% / 4)
     }
 
     .sidebar {
@@ -439,8 +447,28 @@ footer i {
         gap: 5px;
         font-size: 10px;
     }
-}
 
+    .icone-dx {
+        display: flex;
+        justify-content: end;
+        margin-left: 50px;
+    }
+
+    .barre-volume2 {
+        display: flex;
+        width: 85%;
+      }
+
+      .time-volumesx {
+        margin-right: 20px;
+        font-size: 13px;
+      }
+
+      .time-volumedx {
+        margin-right: 20px;
+        font-size: 13px;
+      }
+}
 
 @media screen and (max-width:576px) {
 
@@ -462,71 +490,132 @@ footer i {
         text-align: center;
     }
 
+    .content-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
 
     .recently-played {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        
 
     }
 
+    .card1 {
+        margin-top: 20px;
+        width: calc(100% / 2);
+    }
+
+    .card2 {
+        margin-top: 20px;
+        width: calc(100% / 2);
+
+    }
+
+    .card3 {
+        margin-top: 20px;
+        width: calc(100% / 2);
+
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 20%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .utente {
+        padding: 20px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .install-top {
+        padding: 20px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .sidebar {
+        width: 35%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .icone-sx {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .install-top {
+        padding: 20px;
+        gap: 5px;
+        font-size: 12px;
+      }
+
+      .utente {
+        padding: 20px;
+        gap: 5px;
+        font-size: 14px;
+      }
+
+      .text-card {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 13px;
+      }
+
+      .footer-sx img {
+        width: 33%;
+        padding: 5px;
+      }
+
+      .time-volumedx {
+        margin-left: 20px;
+        font-size: 10px;
+      }
+
+      .time-volumesx {
+        
+        font-size: 10px;
+      }
+
+      .barre-volume2 {
+        display: flex;
+        width: 90%;
+        
+      }
+
+      .footer-dx {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% / 3);
+        justify-content: center;
+      }
+
+      .icone-dx {
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+      }
+
+ }
 
 
-.card1 {
-    margin-top: 20px;
-    width: calc(100% - 55%);
-}
-
-.card2 {
-    margin-top: 20px;
-    flex: 1 1 calc(50% - 20px);
-
-}
-
-.card3 {
-    margin-top: 20px;
-    flex: 1 1 calc(50% - 20px);
-
-}
-
-.sidebar {
-    height: 100%;
-    width: 20%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 10px;
-}
-
-.utente {
-    padding: 20px;
-    gap: 5px;
-    font-size: 10px;
-}
-
-.install-top {
-    padding: 20px;
-    gap: 5px;
-    font-size: 10px;
-}
-
-.sidebar {
-    width: 35%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 15px;
-}
-
-.icone-sx {
-
-    margin-left: 15px;
-}
-
-}
 
 
 @media screen and (min-width:476px) {}
