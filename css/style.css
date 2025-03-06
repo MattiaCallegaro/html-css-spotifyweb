@@ -39,7 +39,9 @@ header {
 .content {
     width: calc(100% - 150px);
     overflow-y: auto;
+
     background-color: #141922;
+
 }
 
 
@@ -193,27 +195,24 @@ li {
 
 .recently-played {
     display: flex;
-    gap: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 96%;
+    
+    width: 100%;
 }
 
 .Creato-per-JohnDoe {
-    display: flex;
-    gap: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    display: flex; 
 }
 
 .card1 {
-    width: calc(100% / 5);
+    width: calc(100% / 6 );
     margin-top: 25px;
+    padding: 10px;
 }
 
 .card2 {
-    width: calc(100% / 6);
+    width: calc(100% / 6 );
     margin-top: 25px;
+    padding: 10px;
 }
 
 .card2 img {
@@ -242,8 +241,9 @@ li {
 }
 
 .card3 {
-    width: calc(100% / 6);
+    width: calc(100% / 6 );
     margin-top: 25px;
+    padding: 10px;
 }
 
 
@@ -253,6 +253,7 @@ li {
 
 footer {
     height: 100px;
+
     background-color: #282828;
     display: flex;
     align-items: center;
@@ -385,17 +386,36 @@ footer i {
 
 @media screen and (max-width:768px) {
 
+    .content-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-bar li {
+
+        color: #7c7070;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content-bar li:last-child {
+        flex-basis: 95%;
+        text-align: center;
+
+
+    }
+
     .recently-played {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
-
         width: 100%;
     }
 
     .card1 {
-        width: calc (100% / 4);
+
         margin-top: 10px;
+        width: calc(100% / 5)
     }
 
     .sidebar {
@@ -422,8 +442,91 @@ footer i {
 }
 
 
+@media screen and (max-width:576px) {
+
+    .content-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content-bar li {
+        flex: 1 1 calc(30% - 10px);
+        color: #7c7070;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content-bar li:last-child {
+        flex-basis: 20%;
+        text-align: center;
+    }
 
 
-@media screen and (min-width:576px) {}
+    .recently-played {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+
+
+.card1 {
+    margin-top: 20px;
+    width: calc(100% - 55%);
+}
+
+.card2 {
+    margin-top: 20px;
+    flex: 1 1 calc(50% - 20px);
+
+}
+
+.card3 {
+    margin-top: 20px;
+    flex: 1 1 calc(50% - 20px);
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.utente {
+    padding: 20px;
+    gap: 5px;
+    font-size: 10px;
+}
+
+.install-top {
+    padding: 20px;
+    gap: 5px;
+    font-size: 10px;
+}
+
+.sidebar {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.icone-sx {
+
+    margin-left: 15px;
+}
+
+}
+
 
 @media screen and (min-width:476px) {}
