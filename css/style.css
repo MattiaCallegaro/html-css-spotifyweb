@@ -67,11 +67,18 @@ header {
 
 /* img */
 
-.logo {
+.logo-none {
     width: 90%;
     padding: 20px 15px;
-
 }
+
+.small-none {
+    width: 90%;
+    padding: 20px 15px;
+    display: none;
+}
+
+
 
 .home {
     width: 20%;
@@ -618,4 +625,90 @@ footer i {
 
 
 
-@media screen and (min-width:476px) {}
+@media screen and (max-width:476px) {
+
+    .content {
+        width: calc(100% - 45px);
+    }
+
+    .logo-none {
+        width: 90%;
+        padding: 20px 15px;
+        display: none;
+    }
+    
+    .small-none {
+        width: 60%;
+        padding: 7px 7px;
+        display: block;
+    }
+
+    .side-none{
+        display: none;
+    }
+
+    .Playlist {
+        display: none;
+    }
+
+    .nome-playlist{
+        display: none;
+    }
+
+    .icone{
+        width: 57%;
+        margin-bottom: 20px;
+        margin-left: -12px;
+    }
+
+    .sidebar {
+        width: 10%;
+        
+    }
+
+    .col-line{
+        display: none;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .install-top {
+        padding: 19px;
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .utente {
+        padding: 13px;
+        gap: 5px;
+        font-size: 24px;
+    }
+
+    .footer-sx img {
+        width: 27%;
+        padding: 19px 8px;
+    }
+
+    .icone-sx {
+        margin-left: 0px;
+    }
+
+    .icone-mid {
+        font-size: 20px;
+        
+    }
+
+    .volume-mid {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .icone-dx {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+
+}
